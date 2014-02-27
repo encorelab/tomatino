@@ -1,0 +1,26 @@
+{
+  "name": "tomatino",
+  "preferGlobal": "false",
+  "version": "0.0.1",
+  "author": "ENCORE Lab",
+  "description": "Arduino pair-pomodoro",
+  "main": "./tomatino.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/encorelab/tomatino"
+  },
+  "dependencies" : {
+    "express" : "*",
+    "serialport" :  "*",
+	"open" : "*",
+    "socket.io" :  "*"
+  },
+  "devDependencies": {
+  },
+  "bundleDependencies": [
+  ],  
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
