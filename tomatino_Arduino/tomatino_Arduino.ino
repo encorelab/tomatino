@@ -30,6 +30,8 @@
 #define IRQ   (2)
 #define RESET (3)  // Not connected by default on the NFC Shield
 
+int incomingByte = 0;
+
 Adafruit_NFCShield_I2C nfc(IRQ, RESET);
 
 void setup(void) {
@@ -66,6 +68,16 @@ void loop(void) {
     nfc.PrintHex(uid, uidLength);
     Serial.println("");
     delay(1000); //wait a bit before trying to read again.
+  }
+  
+  if (Serial.available() > 0) {
+    incomingByte = Serial.read();
+    
+    // say what you got:
+    Serial.print("I received: ");
+    Serial.println(incomingByte, DEC);
+    
+    /* Do action corresponding to signals */
   }
 }
 

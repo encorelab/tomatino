@@ -7,17 +7,9 @@
 		* socket.io (http://socket.io/#how-to-use)
 		* serialport.js (https://github.com/voodootikigod/node-serialport)
 		
-	based on the core examples for socket.io and serialport.js
-		
-	created 21 Aug 2012
-	modified 19 Jan 2014
-	by Tom Igoe
-	
-	Patches and improvements suggested by Steve Klise, Lia Martinez, and Will Jennings
+	Sourced from: https://github.com/tigoe/NetworkExamples/blob/master/nodeSerialServer/index.js
 
 */
-
-
 
 
 
