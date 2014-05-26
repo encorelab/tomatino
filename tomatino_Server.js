@@ -42,7 +42,7 @@ var myPort = new SerialPort(portName, {
   
 // respond to web GET requests with the index.html page:
 app.get('/', function (request, response) {
-  response.sendfile(__dirname + '/index.html');
+  response.sendfile(__dirname + '/tomatino_Listener.html');
 });
 
 // listen for new socket.io connections:
